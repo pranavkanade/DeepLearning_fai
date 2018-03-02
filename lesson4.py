@@ -14,3 +14,21 @@ from fastai.nlp import *
 from fastai.lm_rnn import *
 
 import dill as pickle
+
+# ---------------------------------------- #
+
+# download the movie dataset
+# this is the sentiment classification task consists of predicting
+# the polarity of the given text(positive or negative)
+
+PATH='data/aclImdb'
+TRN_PATH = 'train/all'
+VAL_PATH = 'test/all'
+
+TRN = f'{PATH}{TRN_PATH}'
+VAL = f'{PATH}{VAL_PATH}'
+
+%ls {PATH}
+
+# ----------------------------------------- #
+
